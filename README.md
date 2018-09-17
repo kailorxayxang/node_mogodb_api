@@ -14,14 +14,14 @@ git chone https://github.com/kailorxayxang/node_mogodb_api.git
 
 on:
 
-   /api/routes/user/login  login to system
-   /api/routes/user/signup to register new user
-   /api/routes/user/id to get user by id ,update or DELETE
-   /api/routes/travel to get all travelling data
-   /api/routes/travel/id to get data by id or update, DELETE
+   1 /api/routes/user/login  login to system
+   2 /api/routes/user/signup to register new user
+   3 /api/routes/user/id to get user by id ,update or DELETE
+   4 /api/routes/travel to get all travelling data
+   5 /api/routes/travel/id to get data by id or update, DELETE
 
 
 
    enjoy
 
-   thanks 
+   thanks
