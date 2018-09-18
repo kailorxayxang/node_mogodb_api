@@ -33,11 +33,11 @@ app.use(sessionMiddleware);
 app.use(passport.initialize());
 app.use(passport.session());
 
-//set json headering 
+//set json headering
 app.use((req, res, next) => {
  res.header("Access-Control-Allow-Origin", "*");
  res.header("Access-Control-Allow-Headers",
-  "Origin, X-Requested-With, Control-Type, Authorization");
+  "Origin, X-Requested-With, Content-Type, Authorization");
  if (req.method === "OPTION") {
   //will tell the brower to allow this header of methods will do it exp get post ....
   res.header('Access-Control-Allow-Methods', 'PUT, PATCH, POST, GET, DELETE');
@@ -53,12 +53,12 @@ const userRoutes = require('./api/routes/user');
 app.use('/travel', travelRoutes);
 app.use('/accounts', userRoutes);
 
-//check error 
+//check error
 app.use((req, res, next) => {
  res.status(404).json({
    message:'this page not found'
  });
 });
 //set app and sen to server file to configure port
-// export app for other file 
+// export app for other file
 module.exports = app;
